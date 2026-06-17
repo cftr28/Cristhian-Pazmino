@@ -435,6 +435,27 @@
                 font-size: 2rem;
             }
         }
+
+.card-pases, .card-final {
+    width: 90%;             /* Ocupa el 90% en móviles */
+    max-width: 500px;       /* Limita el ancho máximo para que no se estire demasiado */
+    margin: 0 auto 20px auto; /* Centra el contenedor y añade margen inferior */
+    padding: 20px;
+    background: #ffffff;    /* O el color que uses */
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+}
+.nombre-invitado {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.cantidad-pases {
+    font-weight: bold;
+    color: #b8860b; /* Tono champagne/dorado */
+}
     </style>
 </head>
 <body>
@@ -551,6 +572,18 @@
         <img src="foto1.jpeg" alt="Santiago y Alejandra 1" class="foto-boda-doble">
         <img src="foto2.jpeg" alt="Santiago y Alejandra 2" class="foto-boda-doble">
     </div>
+    <section class="seccion-pases aparecer-grupo">
+    <div class="card-pases">
+        <h3 class="titulo-pases letras-efecto">Pases Reservados</h3>
+        <p class="texto-info">Hemos reservado pases para:</p>
+        <div class="nombre-invitado">
+            <strong>Luis Picho y Acompañante</strong>
+        </div>
+        <div class="cantidad-pases">
+            <p>2 PASES</p>
+        </div>
+    </div>
+</section>
     <section class="seccion-final aparecer-grupo">
         <div class="card-final">
             <img src="image100.png" alt="Ceremonia" class="imagen-icono"> 
