@@ -391,7 +391,9 @@
         z-index:-1; 
     } 
 
-    /* BOTÓN PLAY */
+    /* ==========================
+       BOTÓN PLAY
+    ========================== */
     .boton-play { 
         display:flex !important;
         flex-direction:column !important; 
@@ -414,7 +416,9 @@
         display:block !important; 
     } 
 
-    /* CONTENEDORES GENERALES */
+    /* ==========================
+       CONTENEDORES GENERALES
+    ========================== */
     section, 
     .container, 
     .contenedor-tarjetas, 
@@ -445,9 +449,16 @@
         margin:auto !important; 
         box-sizing:border-box !important; 
         text-align:center !important;
+
+        display:flex !important;
+        flex-direction:column !important;
+        justify-content:center !important;
+        align-items:center !important;
     } 
 
-    /* TEXTO GENERAL */
+    /* ==========================
+       TEXTOS GENERALES
+    ========================== */
     .fecha { 
         font-size:1.1rem !important; 
         margin-bottom:20px !important; 
@@ -462,12 +473,14 @@
     } 
 
     .titulo-card { 
-        font-size:2rem !important; 
+        font-size:1.8rem !important; 
         margin-bottom:12px !important;
         color:#666 !important;
     } 
 
-    /* IMÁGENES */
+    /* ==========================
+       IMÁGENES
+    ========================== */
     .foto-boda { 
         width:75% !important; 
         max-width:260px !important; 
@@ -489,7 +502,9 @@
         max-width:240px !important; 
     } 
 
-    /* CONTADOR */
+    /* ==========================
+       CONTADOR
+    ========================== */
     .contador-container { 
         gap:5px !important; 
     } 
@@ -503,14 +518,18 @@
         padding:12px 4px !important; 
     } 
 
-    /* BOTONES */
+    /* ==========================
+       BOTONES
+    ========================== */
     .boton-llegar, 
     .boton-confirmar, 
     .boton-pdf { 
         max-width:90% !important; 
     } 
 
-    /* NOVIOS */
+    /* ==========================
+       NOVIOS
+    ========================== */
     .nombres, 
     .nombres-final, 
     .nombres-cierre { 
@@ -522,13 +541,21 @@
         text-align:center !important; 
     } 
 
-    /* PADRES Y PADRINOS (FIX FINAL LIMPIO) */
+    /* ==========================
+       PADRES Y PADRINOS (FIX FINAL)
+    ========================== */
+
+    .seccion-familia {
+        padding:30px 10px !important;
+    }
+
     .info-padres { 
         display:flex !important; 
         flex-direction:column !important; 
         align-items:center !important; 
         justify-content:center !important; 
-        gap:12px !important; 
+        gap:10px !important; 
+        width:100% !important;
     } 
 
     .columna { 
@@ -537,14 +564,16 @@
     } 
 
     .rol { 
-        font-size:0.95rem !important; 
+        font-size:0.9rem !important; 
         font-weight:bold !important; 
         color:#777 !important; 
-        margin:10px 0 5px 0 !important; 
+        margin:8px 0 5px 0 !important; 
     } 
 
-    .columna p { 
-        font-size:1rem !important; /* mismo tamaño que padrinos */
+    /* 🔥 IGUALA PADRES CON PADRINOS */
+    .columna p,
+    .card p { 
+        font-size:0.95rem !important; 
         margin:2px 0 !important; 
         color:#555 !important; 
     } 
